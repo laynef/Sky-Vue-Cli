@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Sky Vue Cli</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+
+    <body>
+        <div id="app"></div>
+        <script src="http://localhost:5000/socket.io/socket.io.js"></script>
+        <script>var socket = io.connect('http://localhost:5000');socket.on('save',(data) => {window.location.reload()});</script>
+        <script src="bundle.js"></script>
+    </body>
+
+</html>

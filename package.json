@@ -1,0 +1,25 @@
+{
+  "name": "sky-vue-cli",
+  "version": "0.0.1",
+  "description": "A RENS Stack Cli",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laynefaler/MERN-Stack_Cli.git"
+  },
+  "keywords": [],
+  "author": "Layne Faler <laynefaler>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laynefaler/MERN-Stack_Cli/issues"
+  },
+  "homepage": "https://github.com/laynefaler/MERN-Stack_Cli#readme",
+  "preferGlobal": true,
+  "bin": {
+    "sky": "./actions/index.js"
+  },
+  "dependencies": {
+    "extract-text-webpack-plugin": "^1.0.1",
+    "jsonfile": "^2.4.0",
+    "ncp": "^2.0.0"
+  }
+}
