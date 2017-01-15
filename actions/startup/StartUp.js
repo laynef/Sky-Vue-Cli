@@ -2,7 +2,6 @@ var TextCommand = require('./../commands/TextCommand.js');
 var PrintDocCommand = require('./../commands/PrintDocCommand.js');
 var CreateCommand = require('./../commands/CreateCommand.js');
 var ComponentCommand = require('./../commands/CreateComponent.js');
-var SecretCommand = require('./../commands/CreateSecret');
 
 var StartUp = function(commandPattern, args, flags) {
   var commanderInCharge = function(mod) {
@@ -21,9 +20,6 @@ var StartUp = function(commandPattern, args, flags) {
       case 'make':
         commanderInCharge(ComponentCommand);
         break;          
-      case 'secret':
-        commanderInCharge(SecretCommand);
-        break;
       default:
         commanderInCharge(PrintDocCommand);
     }
