@@ -7,18 +7,13 @@
 `sky create <project-name-here>` <br>
 `cd <project-name-here>` <br>
 `npm install` <br>
-`Add MongoDB Connection in config.js I use MLAB` <br>
+`Add MySQL Connection in config.js I use ElephantSQL` <br>
 `npm start` <br>
 
 ## Make Empty Component
 
 `cd <your-project-here>` <br>
 `sky make <your-component-name-here>` <br>
-`sky page <your-page-name-here>` <br>
-
-## Make Empty Page
-
-`cd <your-project-here>` <br>
 `sky page <your-page-name-here>` <br>
 
 ## Extra Commands
