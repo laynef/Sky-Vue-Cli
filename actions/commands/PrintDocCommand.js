@@ -2,17 +2,29 @@ var actionJson = require('../../package.json');
 
 var PrintDoc = function() {
   var printMe = function() {
-    console.log('___  ___ ___________ _   _ ');
-    console.log('|  \\/  ||  ___| ___ \\ \\ | |');
-    console.log('| .  . || |__ | |_/ /  \\| |');
-    console.log('| |\\/| ||  __||    /| . ` |');
-    console.log('| |  | || |___| |\\ \\| |\\  |');
-    console.log('\\_|  |_/\\____/\\_| \\_\\_| \\_/');
+    /*
+     _____ _            _   _            
+/  ___| |          | | | |           
+\ `--.| | ___   _  | | | |_   _  ___ 
+ `--. \ |/ / | | | | | | | | | |/ _ \
+/\__/ /   <| |_| | \ \_/ / |_| |  __/
+\____/|_|\_\\__, |  \___/ \__,_|\___|
+             __/ |                   
+            |___/                  
+     */
+
+    console.log(`     _____ _            _   _    `)
+    console.log(`/  ___| |          | | | |           `)
+    console.log(`\\ \`--.| | ___   _  | | | |_   _  ___ `)
+    console.log(` \`--. \\ |/ / | | | | | | | | | |/ _ \\`)
+    console.log(`/\\__/ /   <| |_| | \\ \\_/ / |_| |  __/`)
+    console.log(`\\____/|_|\\_\\__, |  \\___/ \\__,_|\\___|`)
+    console.log(`             __/ |                   `)
+    console.log(`            |___/                  `)
     console.log("\n");
     console.log("RENS-Stack-Cli - Version" + actionJson.version);
     console.log('├── create             ─ Create a new project');
     console.log('├── make               ─ Create a new component');
-    console.log('├── page               ─ Create a new page');
     console.log('└── runs                ─ Verify that your stack works');
   };
   return {

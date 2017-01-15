@@ -42,11 +42,13 @@ var CreateCommand = function(name) {
         "css-loader": "^0.26.0",
         "extract-text-webpack-plugin": "^1.0.1",
         "html-loader": "^0.4.4",
+        "html-webpack-plugin": "^2.26.0",
         "mysql": "^2.12.0",
         "node-sass": "^3.13.0",
         "nodemon": "^1.11.0",
         "sass-loader": "^4.0.2",
         "style-loader": "^0.13.1",
+        "vue-loader": "^9.5.0",
         "webpack": "^1.13.3",
         "webpack-dev-server": "^1.16.2"
       },
@@ -65,6 +67,7 @@ var CreateCommand = function(name) {
         "pg": "^6.1.0",
         "pg-hstore": "^2.3.2",
         "sequelize": "^3.27.0",
+        "serve-favicon": "^2.3.2",
         "socket.io": "^1.7.1",
         "sqlite3": "^3.1.8",
         "tedious": "^1.14.0",
@@ -72,7 +75,7 @@ var CreateCommand = function(name) {
         "vue-loader": "^10.0.0",
         "vue-style-loader": "^1.0.0",
         "vue-template-compiler": "^2.1.0"
-        }
+      }
     };
 
     // copy project to new directory

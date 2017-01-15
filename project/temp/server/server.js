@@ -7,11 +7,11 @@ const morgan = require('morgan')
 const routes = require('./routes')
 const cors = require('cors')
 const config = require('../config')
-const mongoose = require('mongoose')
 const cookieParser = require('cookie-parser')
 const flash = require('express-flash')
 const session = require('express-session')
 const fs = require('fs')
+var favicon = require('serve-favicon')
 
 // port settings
 let port = process.env.PORT || 5000
@@ -29,6 +29,7 @@ app.use(morgan('dev'))
 app.use(parser.urlencoded({ extended: true}))
 app.use(parser.json())
 app.use(cookieParser())
+app.use(favicon(__dirname + '/logo.png'))
 
 // Render the index.html
 app.get('/', (req, res) => { 

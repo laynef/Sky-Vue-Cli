@@ -1,28 +1,26 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
     <greeting></greeting>
   </div>
 </template>
 
 <script>
-import greeting from './components/Greeting'
+import Greeting from './components/Greeting'
 
 export default {
   name: 'app',
   components: {
-    greeting
+    Greeting
   }
 }
 </script>
 
 <style lang="sass">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  html {
+    background: url('http://images4.fanpop.com/image/photos/19900000/SunSet-sunsets-and-sunrises-19955107-2560-1817.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 </style>
