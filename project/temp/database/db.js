@@ -1,20 +1,10 @@
-// // MongoDB database
-// const mongoose = require('mongoose')
-// const Schema = mongoose.Schema
+// const Sequelize = require('sequelize')
+// const db = new Sequelize('database', 'user', 'pass')
 
-// // schemas
-// const userSchema = new Schema({
-//   username: String,
-//   email: String,
-//   password: String,
-//   firstName: String,
-//   lastName: String
-// }, {collection: 'userSchema'})
+// const User = db.define('user', {
+//     name: Sequelize.STRING
+// })
 
-// // Models
-// let User = mongoose.model('User', userSchema)
+// User.sync()
 
-// //exports
-// module.exports = {
-//     User: User
-// }
+// module.exports = User

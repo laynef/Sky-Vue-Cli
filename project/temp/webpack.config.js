@@ -26,7 +26,15 @@ module.exports = {
       sass: ExtractTextPlugin.extract('css!sass')
     }
   },
+  resolve: {
+      extensions: ['', '.js', '.vue', '.scss', '.css', '.sass']
+    },
+    htmlLoader: {
+        ignoreCustomFragments: [/\{\{.*?}}/],
+        root: path.resolve(__dirname + '/public'),
+        attrs: ['img:src', 'link:href']
+    },
   plugins: [
-    new ExtractTextPlugin("style.css")
+    new ExtractTextPlugin("public/main.css", { allChunks: true })
   ]
 }

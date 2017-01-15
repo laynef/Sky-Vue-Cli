@@ -30,13 +30,6 @@ app.use(parser.urlencoded({ extended: true}))
 app.use(parser.json())
 app.use(cookieParser())
 
-// database connection
-mongoose.connect(config.mongo)
-const db = mongoose.connection
-db.once('open', () => {
-  console.log('connected to database')
-})
-
 // Render the index.html
 app.get('/', (req, res) => { 
     res.sendFile('index.html') 

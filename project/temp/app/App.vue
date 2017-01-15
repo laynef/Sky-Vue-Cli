@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <img src="./assets/logo.png">
     <greeting></greeting>
   </div>
 </template>
@@ -15,7 +16,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="sass">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
