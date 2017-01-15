@@ -1,7 +1,7 @@
 {
   "name": "sky-vue-cli",
-  "version": "0.1.0",
-  "description": "A RENS Stack Cli",
+  "version": "0.1.1",
+  "description": "A Sky Vue Cli",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/laynefaler/MERN-Stack_Cli.git"
